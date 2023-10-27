@@ -16,5 +16,23 @@ namespace AreaTrianguloForms
         {
             InitializeComponent();
         }
+
+        private void txtResultado_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+       
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double n1, n2, resultado;
+            n1 = double.Parse(txtBase.Text);
+            n2 = double.Parse(txtAltura.Text);
+
+            resultado = (n1 * n2) / 2;
+
+            txbResultado.Text = resultado.ToString();
+        }
     }
 }
